@@ -52,7 +52,16 @@ export default function Footer() {
       <div className="border-t border-slate-200 px-4 py-6 text-center text-xs text-slate-500 sm:px-6">
         © {new Date().getFullYear()} Vivv Technologies. All rights reserved.
         <span className="mx-2 text-slate-400">|</span>
-        Developed by cleanstacky Technologies
+        Developed with <span aria-hidden="true">❤️</span>{" "} By
+        <span className="sr-only">love</span>{" "}
+        <a
+          href="https://cleanstacky.com"
+          className="font-semibold text-emerald-600 transition hover:text-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Cleanstacky Technologies
+        </a>
       </div>
     </footer>
   );
