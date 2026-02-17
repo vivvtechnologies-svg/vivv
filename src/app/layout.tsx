@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { siteContent } from "@/content/siteContent";
 
 const metadataBase =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
@@ -10,15 +9,22 @@ const metadataBase =
 export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   title: {
-    default: "Vivv Technologies | Smart Systems. Sustainable Growth.",
+    default: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
     template: "%s | Vivv Technologies",
   },
-  description: siteContent.brand.description,
+  description:
+    "Clinic automation systems for Indian clinics. Reduce missed appointments, streamline billing, and automate follow-ups with WhatsApp-first workflows.",
   openGraph: {
     type: "website",
-    title: "Vivv Technologies",
-    description: siteContent.brand.description,
+    title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+    description:
+      "Clinic automation systems for Indian clinics. Reduce missed appointments, streamline billing, and automate follow-ups with WhatsApp-first workflows.",
     siteName: "Vivv Technologies",
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
@@ -49,6 +55,55 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <a
+          href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+          className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+          aria-label="WhatsApp Vivv Technologies"
+          target="_blank"
+          rel="noreferrer"
+        >
+          WhatsApp Us
+        </a>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Vivv Technologies",
+              url: metadataBase,
+              telephone: "+91-8095045559",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Bengaluru",
+                addressCountry: "IN",
+              },
+              areaServed: "IN",
+              sameAs: ["https://vivvtechnologies.in"],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Clinic Automation & WhatsApp Systems",
+              provider: {
+                "@type": "LocalBusiness",
+                name: "Vivv Technologies",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Bengaluru",
+                  addressCountry: "IN",
+                },
+              },
+              areaServed: "IN",
+              serviceType: "Clinic automation systems",
+            }),
+          }}
+        />
       </body>
     </html>
   );

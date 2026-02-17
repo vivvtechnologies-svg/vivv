@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { siteContent } from "@/content/siteContent";
 import TrackedLink from "@/components/TrackedLink";
+
+const navigation = [
+  { label: "Home", href: "/" },
+  { label: "Clinic Solutions", href: "/clinic-solutions" },
+  { label: "Demo", href: "/demo" },
+  { label: "Process", href: "/process" },
+  { label: "Contact", href: "/contact" },
+];
 
 export default function Header() {
   const pathname = usePathname();
@@ -13,14 +20,14 @@ export default function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="group inline-flex items-center gap-2">
           <span className="text-lg font-semibold tracking-tight text-emerald-600">
-            {siteContent.brand.name}
+            Vivv Technologies
           </span>
           <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-slate-500 sm:inline">
-            Systems
+            Clinics
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex">
-          {siteContent.navigation.map((item) => {
+          {navigation.map((item) => {
             const isActive =
               item.href === "/"
                 ? pathname === item.href

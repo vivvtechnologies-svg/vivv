@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { siteContent } from "@/content/siteContent";
+const navigation = [
+  { label: "Home", href: "/" },
+  { label: "Clinic Solutions", href: "/clinic-solutions" },
+  { label: "Demo", href: "/demo" },
+  { label: "Process", href: "/process" },
+  { label: "Contact", href: "/contact" },
+];
 
 export default function Footer() {
   return (
@@ -7,10 +13,11 @@ export default function Footer() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
         <div>
           <p className="text-lg font-semibold text-emerald-600">
-            {siteContent.brand.name}
+            Vivv Technologies
           </p>
           <p className="mt-3 max-w-sm text-sm text-slate-600">
-            {siteContent.brand.description}
+            Clinic automation systems that reduce missed appointments, simplify
+            billing, and help teams focus on patient care.
           </p>
         </div>
         <div>
@@ -18,7 +25,7 @@ export default function Footer() {
             Quick Links
           </p>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            {siteContent.navigation.map((item) => (
+            {navigation.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

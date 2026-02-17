@@ -3,10 +3,10 @@ import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Vivv Technologies and our mission.",
+  description: "Learn about Vivv Technologies and our clinic-first mission.",
   openGraph: {
     title: "About Vivv Technologies",
-    description: "Learn about Vivv Technologies and our mission.",
+    description: "Learn about Vivv Technologies and our clinic-first mission.",
   },
 };
 

@@ -1,63 +1,89 @@
 import type { Metadata } from "next";
-import { siteContent } from "@/content/siteContent";
+import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: siteContent.brand.description,
+  title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+  description:
+    "We help Indian clinics reduce missed appointments, streamline billing, and automate follow-ups using simple web systems + WhatsApp automation.",
   openGraph: {
-    title: "Vivv Technologies",
-    description: siteContent.brand.description,
+    title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+    description:
+      "We help Indian clinics reduce missed appointments, streamline billing, and automate follow-ups using simple web systems + WhatsApp automation.",
   },
 };
 
 export default function HomePage() {
-  const { home } = siteContent;
-
   return (
     <div>
       <section className="section-pad">
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-              Vivv Technologies
+              Clinic Automation
             </p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-              {home.hero.headline}
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
+              Clinic Automation Systems. Less Manual Work. More Patients.
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              {home.hero.subheadline}
+              We help Indian clinics reduce missed appointments, streamline
+              billing, and automate follow-ups using simple web systems +
+              WhatsApp automation.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <TrackedLink
-                href={home.hero.primaryCta.href}
-                label={home.hero.primaryCta.label}
+                href="/contact"
+                label="Book a Free Clinic Demo"
                 location="home-hero"
                 className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
-                {home.hero.primaryCta.label}
+                Book a Free Clinic Demo
               </TrackedLink>
               <TrackedLink
-                href={home.hero.secondaryCta.href}
-                label={home.hero.secondaryCta.label}
+                href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+                label="WhatsApp Us"
                 location="home-hero"
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+                className="rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
-                {home.hero.secondaryCta.label}
+                WhatsApp Us
               </TrackedLink>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-3 text-xs font-semibold text-slate-600">
+              {[
+                "Appointment + Follow-up",
+                "Billing + Receipts",
+                "Reports + Dashboards",
+              ].map((chip) => (
+                <span
+                  key={chip}
+                  className="rounded-full border border-slate-200 bg-white px-4 py-2"
+                >
+                  {chip}
+                </span>
+              ))}
             </div>
           </div>
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-8 shadow-sm">
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-slate-200/60 blur-2xl" />
             <div className="absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-slate-300/50 blur-3xl" />
             <div className="relative space-y-6">
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <Image
+                  src="/brand.jpeg"
+                  alt="Clinic automation dashboard preview"
+                  width={1536}
+                  height={1024}
+                  className="h-48 w-full object-cover sm:h-56"
+                  priority
+                />
+              </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
                   Revenue Systems
                 </p>
                 <p className="mt-3 text-sm text-slate-600">
-                  Structured workflows, automated follow-ups, and visibility that
-                  keeps your teams aligned.
+                  Appointment flows, billing checks, and visibility that keeps
+                  clinic teams aligned.
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -65,8 +91,8 @@ export default function HomePage() {
                   Operational Clarity
                 </p>
                 <p className="mt-3 text-sm text-slate-600">
-                  Real-time dashboards, controlled processes, and sustainable
-                  growth without the chaos.
+                  Real-time dashboards, controlled processes, and cleaner
+                  patient journeys.
                 </p>
               </div>
             </div>
@@ -77,13 +103,25 @@ export default function HomePage() {
       <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            {home.problem.title}
+            Clinic Operations Shouldn’t Depend on Memory & Registers.
           </h2>
-          <div className="prose-lite mt-6 text-base text-slate-600">
-            {home.problem.body.split("\n\n").map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+          <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
+            {[
+              "Missed calls and missed appointments",
+              "Manual appointment books that get messy fast",
+              "Delayed follow-ups and reminders",
+              "Billing errors and receipt mismatches",
+              "No daily or weekly collections reports",
+              "Staff confusion across doctors and services",
+            ].map((item) => (
+              <li
+                key={item}
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-3"
+              >
+                {item}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -91,90 +129,106 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="flex items-center justify-between gap-6">
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-              {home.industries.title}
+              What We Build For Clinics
             </h2>
           </div>
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                {home.industries.diagnosticLabs.title}
-              </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
-                {home.industries.diagnosticLabs.tagline}
-              </h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {home.industries.diagnosticLabs.bullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
-                ))}
-              </ul>
-              <TrackedLink
-                href={home.industries.diagnosticLabs.cta.href}
-                label={home.industries.diagnosticLabs.cta.label}
-                location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Appointment Scheduling",
+                body: "Online booking + receptionist scheduling with smart slots.",
+              },
+              {
+                title: "WhatsApp Reminders & Follow-ups",
+                body: "Visit reminders, test reminders, vaccine reminders.",
+              },
+              {
+                title: "Billing, Receipts & Payments",
+                body: "UPI payments, partial payments, and clean receipts.",
+              },
+              {
+                title: "Patient Records & Visit History",
+                body: "Simple, fast search for returning patients.",
+              },
+              {
+                title: "Reports Dashboard",
+                body: "Daily collections, doctor-wise, service-wise.",
+              },
+              {
+                title: "Admin & Staff Roles",
+                body: "Owner visibility with receptionist-limited access.",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
               >
-                {home.industries.diagnosticLabs.cta.label}
-              </TrackedLink>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                {home.industries.supermarkets.title}
-              </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
-                {home.industries.supermarkets.tagline}
-              </h3>
-              <p className="mt-4 text-sm text-slate-600">
-                {home.industries.supermarkets.bodyLine}
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {home.industries.supermarkets.bullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
-                ))}
-              </ul>
-              <TrackedLink
-                href={home.industries.supermarkets.cta.href}
-                label={home.industries.supermarkets.cta.label}
-                location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
-              >
-                {home.industries.supermarkets.cta.label}
-              </TrackedLink>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                {home.industries.schools.title}
-              </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
-                {home.industries.schools.tagline}
-              </h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {home.industries.schools.bullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
-                ))}
-              </ul>
-              <TrackedLink
-                href={home.industries.schools.cta.href}
-                label={home.industries.schools.cta.label}
-                location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
-              >
-                {home.industries.schools.cta.label}
-              </TrackedLink>
-            </div>
+                <h3 className="text-lg font-semibold text-slate-900">
+                  {card.title}
+                </h3>
+                <p className="mt-3 text-sm text-slate-600">{card.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <TrackedLink
+              href="/clinic-solutions"
+              label="Get a Clinic System Plan"
+              location="home-solutions"
+              className="inline-flex rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+            >
+              Get a Clinic System Plan
+            </TrackedLink>
           </div>
         </div>
       </section>
 
-      <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
+      <section className="section-pad border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+            See a Working Demo
+          </h2>
+          <p className="mt-4 text-base text-slate-600">
+            We can tailor this to single-doctor clinics or multi-branch clinics.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              "Appointment dashboard",
+              "Billing screen",
+              "Daily report",
+            ].map((label) => (
+              <div
+                key={label}
+                className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <div className="flex h-36 items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-slate-50 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  {label}
+                </div>
+                <p className="mt-4 text-sm text-slate-600">
+                  Interactive demo card preview.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-pad">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight">
-            {home.approach.title}
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+            How Vivv Works for Clinics
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {home.approach.steps.map((step) => (
+            {[
+              "Diagnose – Understand your clinic workflow, services, and gaps",
+              "Design – Build a clinic-first system plan",
+              "Implement – Set up automation, billing, and reminders",
+              "Optimize – Improve based on weekly operational data",
+              "Support – Long-term support and upgrades",
+            ].map((step) => (
               <div
                 key={step}
-                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm"
+                className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm text-slate-700"
               >
                 {step}
               </div>
@@ -183,37 +237,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            {home.whyVivv.title}
+            Simple Pricing
           </h2>
-          <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
-            {home.whyVivv.bullets.map((bullet) => (
-              <li key={bullet} className="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-                {bullet}
-              </li>
+          <p className="mt-4 text-base text-slate-600">
+            Exact price depends on modules. We start with MVP and scale.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Starter Clinic",
+                body: "Single doctor, essentials for appointments and billing.",
+              },
+              {
+                title: "Growing Clinic",
+                body: "2–5 staff with WhatsApp automation and reporting.",
+              },
+              {
+                title: "Multi-branch Clinic",
+                body: "Central reporting and multi-location visibility.",
+              },
+            ].map((tier) => (
+              <div
+                key={tier.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <h3 className="text-lg font-semibold text-slate-900">
+                  {tier.title}
+                </h3>
+                <p className="mt-3 text-sm text-slate-600">{tier.body}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
-      <section className="section-pad border-t border-slate-200 bg-slate-50">
+      <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            {home.finalCta.heading}
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Ready to Run Your Clinic Like a System?
           </h2>
-          <p className="mt-4 text-base text-slate-600">
-            {home.finalCta.body}
+          <p className="mt-4 text-base text-slate-300">
+            Based in Bengaluru • Fast support • Long-term partner
           </p>
-          <TrackedLink
-            href={home.finalCta.button.href}
-            label={home.finalCta.button.label}
-            location="home-final-cta"
-            className="mt-8 inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
-          >
-            {home.finalCta.button.label}
-          </TrackedLink>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <TrackedLink
+              href="/contact"
+              label="Book a Free Clinic Demo"
+              location="home-final-cta"
+              className="inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+            >
+              Book a Free Clinic Demo
+            </TrackedLink>
+            <TrackedLink
+              href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+              label="WhatsApp Us"
+              location="home-final-cta"
+              className="inline-flex rounded-full border border-emerald-300 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:border-emerald-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >
+              WhatsApp Us
+            </TrackedLink>
+          </div>
         </div>
       </section>
     </div>

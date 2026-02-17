@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "Process",
-  description: "Our structured implementation model for sustainable results.",
+  description:
+    "Clinic-first implementation model to diagnose, design, implement, optimize, and support your clinic systems.",
   openGraph: {
-    title: "Vivv Technologies Process",
-    description: "Our structured implementation model for sustainable results.",
+    title: "Clinic Process | Vivv Technologies",
+    description:
+      "Clinic-first implementation model to diagnose, design, implement, optimize, and support your clinic systems.",
   },
 };
 
 export default function ProcessPage() {
-  const { process } = siteContent;
-
   return (
     <div className="section-pad">
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
@@ -26,12 +25,15 @@ export default function ProcessPage() {
             <div className="float-slow absolute bottom-[-20%] right-[20%] h-44 w-44 rounded-full bg-emerald-50 blur-3xl" />
           </div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Process
+            Clinic Process
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
-            {process.title}
+            How Vivv Works for Clinics
           </h1>
-          <p className="mt-6 text-base text-slate-600">{process.body}</p>
+          <p className="mt-6 text-base text-slate-600">
+            We follow a clinic-first framework to deliver measurable operational
+            improvements without disrupting daily patient flow.
+          </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-[0.5fr_1fr]">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -56,7 +58,13 @@ export default function ProcessPage() {
             <div className="relative">
               <div className="absolute left-4 top-0 h-full w-px bg-slate-200" />
               <div className="space-y-6">
-                {process.steps.map((step, index) => (
+                {[
+                  "Diagnose – Understand your clinic workflow, services, and gaps",
+                  "Design – Build a clinic-first system plan",
+                  "Implement – Set up automation, billing, and reminders",
+                  "Optimize – Improve based on weekly operational data",
+                  "Support – Long-term support and upgrades",
+                ].map((step, index) => (
                   <div
                     key={step}
                     className="fade-in-up relative ml-10 rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm text-slate-700 shadow-sm"
@@ -72,7 +80,7 @@ export default function ProcessPage() {
             </div>
           </div>
           <p className="mt-10 text-sm font-semibold text-slate-700">
-            {process.footer}
+            We work as long-term partners — not short-term vendors.
           </p>
         </div>
       </div>

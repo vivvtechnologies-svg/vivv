@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { siteContent } from "@/content/siteContent";
 
 const encode = (data: Record<string, string>) =>
   Object.keys(data)
@@ -148,7 +147,7 @@ export default function ContactForm() {
       >
         {status === "submitting"
           ? "Submitting..."
-          : siteContent.contact.formButton}
+          : "Request Free Clinic Demo"}
       </button>
     </form>
   );

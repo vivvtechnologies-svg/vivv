@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
-import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Request a free consultation with Vivv Technologies.",
+  description: "Book a free clinic demo with Vivv Technologies.",
   openGraph: {
     title: "Contact Vivv Technologies",
-    description: "Request a free consultation with Vivv Technologies.",
+    description: "Book a free clinic demo with Vivv Technologies.",
   },
 };
 
 export default function ContactPage() {
-  const { contact } = siteContent;
-
   return (
     <div className="section-pad">
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
@@ -23,18 +20,21 @@ export default function ContactPage() {
         <div className="mt-4 grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <h1 className="text-4xl font-semibold tracking-tight text-slate-900">
-              {contact.title}
+              Book a Free Clinic Demo
             </h1>
-            <p className="mt-6 text-base text-slate-600">{contact.body}</p>
+            <p className="mt-6 text-base text-slate-600">
+              Share your clinic details and we will set up a demo tailored to
+              your workflow.
+            </p>
             <div className="mt-8 space-y-3 text-sm text-slate-700">
-              <p>📍 Location: {contact.placeholders.location}</p>
-              <p>📧 Email: {contact.placeholders.email}</p>
-              <p>📞 Phone: {contact.placeholders.phone}</p>
+              <p>📍 Location: Bengaluru</p>
+              <p>📧 Email: info@vivvtechnologies.in</p>
+              <p>📞 Phone: 8095045559</p>
             </div>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">
-              Request Free Consultation
+              Request Free Clinic Demo
             </h2>
             <p className="mt-2 text-sm text-slate-600">
               Share a few details and we will reach out shortly.
