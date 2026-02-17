@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Vivv Technologies and our clinic-first mission.",
+  description: "Learn about Vivv Technologies and our mission.",
   openGraph: {
     title: "About Vivv Technologies",
-    description: "Learn about Vivv Technologies and our clinic-first mission.",
+    description: "Learn about Vivv Technologies and our mission.",
   },
 };
 
 export default function AboutPage() {
-  const { about } = siteContent;
-
   return (
     <div className="section-pad">
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
@@ -20,25 +17,43 @@ export default function AboutPage() {
           About
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
-          {about.title}
+          About Vivv Technologies
         </h1>
         <div className="prose-lite mt-6 text-base text-slate-600">
-          {about.body.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          <p>
+            Vivv Technologies was founded to bring structure, clarity, and
+            sustainable growth to operationally intensive businesses.
+          </p>
+          <p>
+            We build custom software, automation, and project delivery systems
+            that remove manual work and create reliable outcomes.
+          </p>
+          <p>
+            Our expertise lies in identifying operational gaps between revenue,
+            customer experience, and internal workflows—and implementing
+            solutions that eliminate inefficiencies while increasing
+            profitability.
+          </p>
+          <p>We don’t just install software.</p>
+          <p>We design business systems that create measurable results.</p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">
-              {about.visionTitle}
+              Our Vision
             </h2>
-            <p className="mt-3 text-sm text-slate-600">{about.vision}</p>
+            <p className="mt-3 text-sm text-slate-600">
+              To become a trusted growth and automation partner for operational
+              businesses across healthcare, retail, and education sectors.
+            </p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">
-              {about.promiseTitle}
+              Our Promise
             </h2>
-            <p className="mt-3 text-sm text-slate-600">{about.promise}</p>
+            <p className="mt-3 text-sm text-slate-600">
+              Clarity. Control. Peace of Mind.
+            </p>
           </div>
         </div>
       </div>

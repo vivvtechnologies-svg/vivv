@@ -3,10 +3,10 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Book a free clinic demo with Vivv Technologies.",
+  description: "Book a free demo with Vivv Technologies.",
   openGraph: {
     title: "Contact Vivv Technologies",
-    description: "Book a free clinic demo with Vivv Technologies.",
+    description: "Book a free demo with Vivv Technologies.",
   },
 };
 
@@ -20,11 +20,11 @@ export default function ContactPage() {
         <div className="mt-4 grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <h1 className="text-4xl font-semibold tracking-tight text-slate-900">
-              Book a Free Clinic Demo
+              Book a Free Demo
             </h1>
             <p className="mt-6 text-base text-slate-600">
-              Share your clinic details and we will set up a demo tailored to
-              your workflow.
+              Share your requirements and we will set up a demo tailored to
+              your operations.
             </p>
             <div className="mt-8 space-y-3 text-sm text-slate-700">
               <p>📍 Location: Bengaluru</p>
@@ -34,7 +34,7 @@ export default function ContactPage() {
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">
-              Request Free Clinic Demo
+              Request Free Demo
             </h2>
             <p className="mt-2 text-sm text-slate-600">
               Share a few details and we will reach out shortly.

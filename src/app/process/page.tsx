@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Process",
   description:
-    "Clinic-first implementation model to diagnose, design, implement, optimize, and support your clinic systems.",
+    "Implementation model to diagnose, design, implement, optimize, and support operational systems.",
   openGraph: {
-    title: "Clinic Process | Vivv Technologies",
+    title: "Process | Vivv Technologies",
     description:
-      "Clinic-first implementation model to diagnose, design, implement, optimize, and support your clinic systems.",
+      "Implementation model to diagnose, design, implement, optimize, and support operational systems.",
   },
 };
 
@@ -25,14 +25,14 @@ export default function ProcessPage() {
             <div className="float-slow absolute bottom-[-20%] right-[20%] h-44 w-44 rounded-full bg-emerald-50 blur-3xl" />
           </div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Clinic Process
+            Process
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
-            How Vivv Works for Clinics
+            How Vivv Works
           </h1>
           <p className="mt-6 text-base text-slate-600">
-            We follow a clinic-first framework to deliver measurable operational
-            improvements without disrupting daily patient flow.
+            We follow a structured framework to deliver measurable operational
+            improvements without disrupting day-to-day work.
           </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-[0.5fr_1fr]">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
@@ -59,10 +59,10 @@ export default function ProcessPage() {
               <div className="absolute left-4 top-0 h-full w-px bg-slate-200" />
               <div className="space-y-6">
                 {[
-                  "Diagnose – Understand your clinic workflow, services, and gaps",
-                  "Design – Build a clinic-first system plan",
-                  "Implement – Set up automation, billing, and reminders",
-                  "Optimize – Improve based on weekly operational data",
+                  "Diagnose – Understand workflows, services, and gaps",
+                  "Design – Build a system blueprint aligned to outcomes",
+                  "Implement – Deploy automation, data, and workflows",
+                  "Optimize – Improve based on operational data",
                   "Support – Long-term support and upgrades",
                 ].map((step, index) => (
                   <div

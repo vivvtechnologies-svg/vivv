@@ -1,7 +1,7 @@
 import Link from "next/link";
 const navigation = [
   { label: "Home", href: "/" },
-  { label: "Clinic Solutions", href: "/clinic-solutions" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Demo", href: "/demo" },
   { label: "Process", href: "/process" },
   { label: "Contact", href: "/contact" },
@@ -16,8 +16,8 @@ export default function Footer() {
             Vivv Technologies
           </p>
           <p className="mt-3 max-w-sm text-sm text-slate-600">
-            Clinic automation systems that reduce missed appointments, simplify
-            billing, and help teams focus on patient care.
+            Custom software, automation, and project management for
+            operationally intensive businesses.
           </p>
         </div>
         <div>

@@ -6,7 +6,7 @@ import TrackedLink from "@/components/TrackedLink";
 
 const navigation = [
   { label: "Home", href: "/" },
-  { label: "Clinic Solutions", href: "/clinic-solutions" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Demo", href: "/demo" },
   { label: "Process", href: "/process" },
   { label: "Contact", href: "/contact" },
@@ -23,7 +23,7 @@ export default function Header() {
             Vivv Technologies
           </span>
           <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-slate-500 sm:inline">
-            Clinics
+            Systems
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex">

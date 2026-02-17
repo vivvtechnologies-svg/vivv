@@ -9,16 +9,18 @@ const metadataBase =
 export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   title: {
-    default: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+    default:
+      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
     template: "%s | Vivv Technologies",
   },
   description:
-    "Clinic automation systems for Indian clinics. Reduce missed appointments, streamline billing, and automate follow-ups with WhatsApp-first workflows.",
+    "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
   openGraph: {
     type: "website",
-    title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+    title:
+      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
     description:
-      "Clinic automation systems for Indian clinics. Reduce missed appointments, streamline billing, and automate follow-ups with WhatsApp-first workflows.",
+      "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
     siteName: "Vivv Technologies",
   },
   icons: {
@@ -56,7 +58,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <a
-          href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+          href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
           className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
           aria-label="WhatsApp Vivv Technologies"
           target="_blank"
@@ -89,7 +91,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Clinic Automation & WhatsApp Systems",
+              name: "Custom Software & Project Management",
               provider: {
                 "@type": "LocalBusiness",
                 name: "Vivv Technologies",
@@ -100,7 +102,7 @@ export default function RootLayout({
                 },
               },
               areaServed: "IN",
-              serviceType: "Clinic automation systems",
+              serviceType: "Custom software, automation, and project management",
             }),
           }}
         />

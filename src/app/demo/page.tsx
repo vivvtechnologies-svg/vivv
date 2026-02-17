@@ -4,11 +4,11 @@ import TrackedLink from "@/components/TrackedLink";
 export const metadata: Metadata = {
   title: "Demo",
   description:
-    "See a working clinic automation demo for appointments, billing, and reporting.",
+    "See a working demo of custom software workflows, billing, and reporting.",
   openGraph: {
-    title: "Clinic Demo | Vivv Technologies",
+    title: "Demo | Vivv Technologies",
     description:
-      "See a working clinic automation demo for appointments, billing, and reporting.",
+      "See a working demo of custom software workflows, billing, and reporting.",
   },
 };
 
@@ -20,12 +20,11 @@ export default function DemoPage() {
           Demo
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
-          See a working clinic system before you decide
+          See a working system before you decide
         </h1>
         <p className="mt-6 text-base text-slate-600">
-          Explore a guided walkthrough of appointment management, billing, and
-          daily reporting. We can tailor this for single-doctor or multi-branch
-          clinics.
+          Explore a guided walkthrough of workflow automation, billing, and
+          reporting. We tailor the system to your operational model.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -42,7 +41,7 @@ export default function DemoPage() {
                 {label}
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                Preview module tailored to your clinic workflow.
+                Preview module tailored to your workflow.
               </p>
             </div>
           ))}
@@ -51,14 +50,14 @@ export default function DemoPage() {
         <div className="mt-10 flex flex-wrap gap-4">
           <TrackedLink
             href="/contact"
-            label="Book a Free Clinic Demo"
+            label="Book a Free Demo"
             location="demo"
             className="inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
           >
-            Book a Free Clinic Demo
+            Book a Free Demo
           </TrackedLink>
           <TrackedLink
-            href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+            href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
             label="WhatsApp Us"
             location="demo"
             className="inline-flex rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"

@@ -3,13 +3,15 @@ import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+  title:
+    "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
   description:
-    "We help Indian clinics reduce missed appointments, streamline billing, and automate follow-ups using simple web systems + WhatsApp automation.",
+    "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
   openGraph: {
-    title: "Clinic Automation & WhatsApp Systems | Vivv Technologies",
+    title:
+      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
     description:
-      "We help Indian clinics reduce missed appointments, streamline billing, and automate follow-ups using simple web systems + WhatsApp automation.",
+      "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
   },
 };
 
@@ -20,27 +22,26 @@ export default function HomePage() {
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-              Clinic Automation
+              Operational Systems
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              Clinic Automation Systems. Less Manual Work. More Patients.
+              Custom Software & Project Management for Operational Businesses
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              We help Indian clinics reduce missed appointments, streamline
-              billing, and automate follow-ups using simple web systems +
-              WhatsApp automation.
+              We build business systems, automation, and dashboards that replace
+              manual work and keep teams aligned—from discovery to delivery.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <TrackedLink
                 href="/contact"
-                label="Book a Free Clinic Demo"
+                label="Book a Free Demo"
                 location="home-hero"
                 className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
-                Book a Free Clinic Demo
+                Book a Free Demo
               </TrackedLink>
               <TrackedLink
-                href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+                href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
                 label="WhatsApp Us"
                 location="home-hero"
                 className="rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
@@ -50,9 +51,9 @@ export default function HomePage() {
             </div>
             <div className="mt-8 flex flex-wrap gap-3 text-xs font-semibold text-slate-600">
               {[
-                "Appointment + Follow-up",
-                "Billing + Receipts",
-                "Reports + Dashboards",
+                "Custom Software",
+                "Automation + Integrations",
+                "Reporting + Visibility",
               ].map((chip) => (
                 <span
                   key={chip}
@@ -82,8 +83,8 @@ export default function HomePage() {
                   Revenue Systems
                 </p>
                 <p className="mt-3 text-sm text-slate-600">
-                  Appointment flows, billing checks, and visibility that keeps
-                  clinic teams aligned.
+                  Structured workflows, automation, and visibility that keeps
+                  teams aligned.
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -92,7 +93,7 @@ export default function HomePage() {
                 </p>
                 <p className="mt-3 text-sm text-slate-600">
                   Real-time dashboards, controlled processes, and cleaner
-                  patient journeys.
+                  operational handoffs.
                 </p>
               </div>
             </div>
@@ -103,16 +104,16 @@ export default function HomePage() {
       <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            Clinic Operations Shouldn’t Depend on Memory & Registers.
+            Operations Shouldn’t Depend on Manual Follow-ups.
           </h2>
           <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
             {[
-              "Missed calls and missed appointments",
-              "Manual appointment books that get messy fast",
-              "Delayed follow-ups and reminders",
-              "Billing errors and receipt mismatches",
-              "No daily or weekly collections reports",
-              "Staff confusion across doctors and services",
+              "Missed calls and leads",
+              "Manual scheduling and spreadsheets",
+              "Delayed follow-ups and handoffs",
+              "Billing errors and process leaks",
+              "No daily or weekly performance reports",
+              "Staff confusion across teams and services",
             ].map((item) => (
               <li
                 key={item}
@@ -129,34 +130,34 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="flex items-center justify-between gap-6">
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-              What We Build For Clinics
+              What We Build
             </h2>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Appointment Scheduling",
-                body: "Online booking + receptionist scheduling with smart slots.",
+                title: "Operations Platforms",
+                body: "Custom web systems that run your day-to-day operations.",
               },
               {
-                title: "WhatsApp Reminders & Follow-ups",
-                body: "Visit reminders, test reminders, vaccine reminders.",
+                title: "WhatsApp & SMS Automation",
+                body: "Automated reminders, follow-ups, and status updates.",
               },
               {
-                title: "Billing, Receipts & Payments",
-                body: "UPI payments, partial payments, and clean receipts.",
+                title: "Billing & Payments",
+                body: "Receipts, payment links, and reconciliation workflows.",
               },
               {
-                title: "Patient Records & Visit History",
-                body: "Simple, fast search for returning patients.",
+                title: "Customer Records",
+                body: "Fast search, history, and relationship tracking.",
               },
               {
-                title: "Reports Dashboard",
-                body: "Daily collections, doctor-wise, service-wise.",
+                title: "Reporting Dashboards",
+                body: "Daily revenue, team performance, and service insights.",
               },
               {
-                title: "Admin & Staff Roles",
-                body: "Owner visibility with receptionist-limited access.",
+                title: "Role-based Access",
+                body: "Owner visibility with staff-specific access control.",
               },
             ].map((card) => (
               <div
@@ -172,12 +173,12 @@ export default function HomePage() {
           </div>
           <div className="mt-8">
             <TrackedLink
-              href="/clinic-solutions"
-              label="Get a Clinic System Plan"
+              href="/solutions"
+              label="Get a System Plan"
               location="home-solutions"
               className="inline-flex rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
             >
-              Get a Clinic System Plan
+              Get a System Plan
             </TrackedLink>
           </div>
         </div>
@@ -189,7 +190,8 @@ export default function HomePage() {
             See a Working Demo
           </h2>
           <p className="mt-4 text-base text-slate-600">
-            We can tailor this to single-doctor clinics or multi-branch clinics.
+            We tailor systems for diagnostic centers, clinics, supermarkets, and
+            schools.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
@@ -216,15 +218,15 @@ export default function HomePage() {
       <section className="section-pad">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            How Vivv Works for Clinics
+            How Vivv Works
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {[
-              "Diagnose – Understand your clinic workflow, services, and gaps",
-              "Design – Build a clinic-first system plan",
-              "Implement – Set up automation, billing, and reminders",
-              "Optimize – Improve based on weekly operational data",
-              "Support – Long-term support and upgrades",
+              "Diagnose – Understand workflows, bottlenecks, and goals",
+              "Design – Build a system blueprint aligned to outcomes",
+              "Implement – Deploy automation, data, and workflows",
+              "Optimize – Improve based on operational data",
+              "Support – Long-term partnership and upgrades",
             ].map((step) => (
               <div
                 key={step}
@@ -248,16 +250,16 @@ export default function HomePage() {
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
               {
-                title: "Starter Clinic",
-                body: "Single doctor, essentials for appointments and billing.",
+                title: "Starter",
+                body: "Single location teams ready to systemize operations.",
               },
               {
-                title: "Growing Clinic",
-                body: "2–5 staff with WhatsApp automation and reporting.",
+                title: "Growth",
+                body: "Multi-team operations with automation + reporting.",
               },
               {
-                title: "Multi-branch Clinic",
-                body: "Central reporting and multi-location visibility.",
+                title: "Enterprise",
+                body: "Multi-branch visibility and advanced workflows.",
               },
             ].map((tier) => (
               <div
@@ -277,7 +279,7 @@ export default function HomePage() {
       <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight">
-            Ready to Run Your Clinic Like a System?
+            Ready to Run Your Business Like a System?
           </h2>
           <p className="mt-4 text-base text-slate-300">
             Based in Bengaluru • Fast support • Long-term partner
@@ -285,14 +287,14 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <TrackedLink
               href="/contact"
-              label="Book a Free Clinic Demo"
+              label="Book a Free Demo"
               location="home-final-cta"
               className="inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
             >
-              Book a Free Clinic Demo
+              Book a Free Demo
             </TrackedLink>
             <TrackedLink
-              href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20a%20clinic%20automation%20demo."
+              href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
               label="WhatsApp Us"
               location="home-final-cta"
               className="inline-flex rounded-full border border-emerald-300 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:border-emerald-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
