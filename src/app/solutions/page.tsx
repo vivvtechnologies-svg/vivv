@@ -18,6 +18,18 @@ const modules = [
     body: "Custom web systems that run day-to-day operations with clarity.",
   },
   {
+    title: "E-commerce Builds",
+    body: "Online ordering, catalogs, checkout, and delivery workflows.",
+  },
+  {
+    title: "B2B Apps",
+    body: "Partner portals, pricing controls, and order management.",
+  },
+  {
+    title: "B2C Apps",
+    body: "Customer apps with onboarding, engagement, and support flows.",
+  },
+  {
     title: "Automation + Integrations",
     body: "WhatsApp/SMS, payment gateways, and workflow automation.",
   },
@@ -44,6 +56,9 @@ const industries = [
   "Clinics",
   "Supermarkets",
   "Schools",
+  "E-commerce Brands",
+  "B2B Service Providers",
+  "B2C Consumer Services",
 ];
 
 const faqs = [
@@ -109,6 +124,10 @@ export default function SolutionsPage() {
           </h2>
           <p className="mt-3 text-sm text-slate-600">
             We build systems for operational businesses across these categories:
+          </p>
+          <p className="mt-3 text-sm text-slate-600">
+            For supermarkets, we focus on increasing repeat orders and leads
+            through online ordering and local delivery flows.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
             {industries.map((industry) => (
