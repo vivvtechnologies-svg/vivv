@@ -3,10 +3,10 @@ import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "Thank You",
-  description: "We received your demo request.",
+  description: "We received your request.",
   openGraph: {
     title: "Thank You",
-    description: "We received your demo request.",
+    description: "We received your request.",
   },
 };
 
@@ -21,7 +21,7 @@ export default function ContactThanksPage() {
           Thank You
         </h1>
         <p className="mt-5 text-base text-slate-600">
-          Your demo request has been received. Our team will reach out shortly.
+          Your request has been received. Our team will reach out shortly.
         </p>
         <TrackedLink
           href="/"

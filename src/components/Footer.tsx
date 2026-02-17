@@ -1,9 +1,9 @@
 import Link from "next/link";
 const navigation = [
   { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
   { label: "Solutions", href: "/solutions" },
-  { label: "Demo", href: "/demo" },
-  { label: "Process", href: "/process" },
+  { label: "Our Process", href: "/process" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -13,11 +13,11 @@ export default function Footer() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
         <div>
           <p className="text-lg font-semibold text-emerald-600">
-            Vivv Technologies
+            Vivv Systems
           </p>
           <p className="mt-3 max-w-sm text-sm text-slate-600">
-            Custom software, automation, and project management for
-            operationally intensive businesses.
+            Structured systems and intelligent automation for operational
+            businesses in healthcare and retail.
           </p>
         </div>
         <div>
@@ -51,13 +51,13 @@ export default function Footer() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
             <li>Location: Bengaluru</li>
-            <li>Email: info@vivvtechnologies.in</li>
+            <li>Email: info@vivvsystems.in</li>
             <li>Phone: 8095045559</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-slate-200 px-4 py-6 text-center text-xs text-slate-500 sm:px-6">
-        © {new Date().getFullYear()} Vivv Technologies. All rights reserved.
+        © {new Date().getFullYear()} Vivv Systems. All rights reserved.
         <span className="mx-2 text-slate-400">|</span>
         Developed with <span aria-hidden="true">❤️</span>{" "} By
         <span className="sr-only">love</span>{" "}

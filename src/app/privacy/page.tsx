@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "Vivv Technologies privacy policy.",
+  description: "Vivv Systems privacy policy.",
   openGraph: {
-    title: "Vivv Technologies Privacy Policy",
-    description: "Vivv Technologies privacy policy.",
+    title: "Vivv Systems Privacy Policy",
+    description: "Vivv Systems privacy policy.",
   },
 };
 
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             {
               title: "Introduction",
               body:
-                "This Privacy Policy explains how Vivv Technologies collects, uses, and protects information when you interact with our website and services.",
+                "This Privacy Policy explains how Vivv Systems collects, uses, and protects information when you interact with our website and services.",
             },
             {
               title: "Information We Collect",
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
             {
               title: "Contact Us",
               body:
-                "If you have questions about this policy or your data, please contact Vivv Technologies using the information on our contact page.",
+                "If you have questions about this policy or your data, please contact Vivv Systems using the information on our contact page.",
             },
           ].map((section) => (
             <div

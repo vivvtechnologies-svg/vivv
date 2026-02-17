@@ -3,10 +3,10 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Book a free demo with Vivv Technologies.",
+  description: "Request a free consultation with Vivv Systems.",
   openGraph: {
-    title: "Contact Vivv Technologies",
-    description: "Book a free demo with Vivv Technologies.",
+    title: "Contact Vivv Systems",
+    description: "Request a free consultation with Vivv Systems.",
   },
 };
 
@@ -20,21 +20,21 @@ export default function ContactPage() {
         <div className="mt-4 grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <h1 className="text-4xl font-semibold tracking-tight text-slate-900">
-              Book a Free Demo
+              Let’s Build a Structured Growth System for Your Business
             </h1>
             <p className="mt-6 text-base text-slate-600">
-              Share your requirements and we will set up a demo tailored to
-              your operations.
+              Whether you operate a lab, supermarket, or school — we are ready to
+              help you streamline operations and increase revenue.
             </p>
             <div className="mt-8 space-y-3 text-sm text-slate-700">
               <p>📍 Location: Bengaluru</p>
-              <p>📧 Email: info@vivvtechnologies.in</p>
+              <p>📧 Email: info@vivvsystems.in</p>
               <p>📞 Phone: 8095045559</p>
             </div>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">
-              Request Free Demo
+              Request Free Consultation
             </h2>
             <p className="mt-2 text-sm text-slate-600">
               Share a few details and we will reach out shortly.

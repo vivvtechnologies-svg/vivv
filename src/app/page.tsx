@@ -3,15 +3,13 @@ import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title:
-    "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
+  title: "Home",
   description:
-    "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
+    "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
   openGraph: {
-    title:
-      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
+    title: "Vivv Systems | Smart Systems. Sustainable Growth.",
     description:
-      "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
+      "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
   },
 };
 
@@ -22,79 +20,49 @@ export default function HomePage() {
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-              Operational Systems
+              Vivv Systems
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              Custom Software & Project Management for Operational Businesses
+              Smart Systems. Sustainable Growth.
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              We build business systems, automation, and dashboards that replace
-              manual work and keep teams aligned—from discovery to delivery.
+              Vivv Systems helps diagnostic labs, supermarkets, and retailers
+              increase revenue, reduce operational inefficiencies, and build
+              predictable growth through structured systems and intelligent
+              automation.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <TrackedLink
                 href="/contact"
-                label="Book a Free Demo"
+                label="Book a Free Consultation"
                 location="home-hero"
                 className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
-                Book a Free Demo
+                Book a Free Consultation
               </TrackedLink>
               <TrackedLink
-                href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
-                label="WhatsApp Us"
+                href="/solutions"
+                label="Explore Our Solutions"
                 location="home-hero"
                 className="rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
-                WhatsApp Us
+                Explore Our Solutions
               </TrackedLink>
             </div>
-            <div className="mt-8 flex flex-wrap gap-3 text-xs font-semibold text-slate-600">
-              {[
-                "Custom Software",
-                "Automation + Integrations",
-                "Reporting + Visibility",
-              ].map((chip) => (
-                <span
-                  key={chip}
-                  className="rounded-full border border-slate-200 bg-white px-4 py-2"
-                >
-                  {chip}
-                </span>
-              ))}
-            </div>
           </div>
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-8 shadow-sm">
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-slate-200/60 blur-2xl" />
             <div className="absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-slate-300/50 blur-3xl" />
-            <div className="relative space-y-6">
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div className="relative flex h-full items-center justify-center">
+              <div className="w-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <Image
-                  src="/brand.jpeg"
-                  alt="Clinic automation dashboard preview"
+                  src="/brand-v2.jpeg"
+                  alt="Vivv Systems brand"
                   width={1536}
                   height={1024}
-                  className="h-48 w-full object-cover sm:h-56"
+                  className="h-64 w-full object-contain sm:h-80"
                   priority
                 />
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                  Revenue Systems
-                </p>
-                <p className="mt-3 text-sm text-slate-600">
-                  Structured workflows, automation, and visibility that keeps
-                  teams aligned.
-                </p>
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                  Operational Clarity
-                </p>
-                <p className="mt-3 text-sm text-slate-600">
-                  Real-time dashboards, controlled processes, and cleaner
-                  operational handoffs.
-                </p>
               </div>
             </div>
           </div>
@@ -104,25 +72,20 @@ export default function HomePage() {
       <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            Operations Shouldn’t Depend on Manual Follow-ups.
+            Growing Shouldn’t Feel This Complicated.
           </h2>
-          <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
-            {[
-              "Missed calls and leads",
-              "Manual scheduling and spreadsheets",
-              "Delayed follow-ups and handoffs",
-              "Billing errors and process leaks",
-              "No daily or weekly performance reports",
-              "Staff confusion across teams and services",
-            ].map((item) => (
-              <li
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-white px-4 py-3"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="prose-lite mt-6 text-base text-slate-600">
+            <p>
+              Many operational businesses lose revenue daily due to missed calls,
+              manual processes, poor follow-ups, and lack of system visibility.
+              Growth becomes chaotic instead of structured.
+            </p>
+            <p>
+              Vivv bridges the gap between operations and customer experience by
+              designing business systems that deliver measurable results —
+              without adding complexity.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -130,107 +93,123 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="flex items-center justify-between gap-6">
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-              What We Build
+              Industries We Specialize In
             </h2>
           </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Operations Platforms",
-                body: "Custom web systems that run your day-to-day operations.",
-              },
-              {
-                title: "WhatsApp & SMS Automation",
-                body: "Automated reminders, follow-ups, and status updates.",
-              },
-              {
-                title: "Billing & Payments",
-                body: "Receipts, payment links, and reconciliation workflows.",
-              },
-              {
-                title: "Customer Records",
-                body: "Fast search, history, and relationship tracking.",
-              },
-              {
-                title: "Reporting Dashboards",
-                body: "Daily revenue, team performance, and service insights.",
-              },
-              {
-                title: "Role-based Access",
-                body: "Owner visibility with staff-specific access control.",
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Diagnostic Labs
+              </p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+                Recover lost leads. Increase walk-ins. Gain full control.
+              </h3>
+              <p className="mt-4 text-sm text-slate-600">
+                We implement intelligent automation systems that:
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                <li>• Recover missed, busy, and unanswered calls</li>
+                <li>• Enable 24/7 self-service appointment booking</li>
+                <li>• Reduce receptionist and admin workload by up to 70%</li>
+                <li>• Increase walk-ins by 10–15% through structured follow-ups</li>
+                <li>• Automate reminders and repeat test notifications</li>
+                <li>• Send offers and coupons for retention</li>
+                <li>• Track revenue, expenses, and repeat customers</li>
+                <li>• Provide owners full operational visibility and control</li>
+              </ul>
+              <TrackedLink
+                href="/solutions/diagnostic-labs"
+                label="Book Lab Growth Audit"
+                location="home-industries"
+                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
               >
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {card.title}
-                </h3>
-                <p className="mt-3 text-sm text-slate-600">{card.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <TrackedLink
-              href="/solutions"
-              label="Get a System Plan"
-              location="home-solutions"
-              className="inline-flex rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
-            >
-              Get a System Plan
-            </TrackedLink>
+                Book Lab Growth Audit
+              </TrackedLink>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Supermarkets
+              </p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+                Transform offline stores into structured revenue engines.
+              </h3>
+              <p className="mt-4 text-sm text-slate-600">
+                We focus on small to medium-sized supermarkets that operate
+                manually and are fully offline.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                <li>• Analysing business operations and identifying revenue gaps</li>
+                <li>• Designing structured sales systems to increase profitability</li>
+                <li>
+                  • Launching dedicated online ordering platforms serving
+                  customers within 0–3 km
+                </li>
+                <li>• Providing full control to manage products, pricing, and offers</li>
+                <li>• Supporting both offline and online sales simultaneously</li>
+                <li>
+                  • Partnering with expert digital marketing teams for affordable
+                  promotion
+                </li>
+                <li>
+                  • Implementing end-to-end business systems for long-term growth
+                </li>
+              </ul>
+              <TrackedLink
+                href="/solutions/supermarkets"
+                label="Get Supermarket Growth Blueprint"
+                location="home-industries"
+                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+              >
+                Get Supermarket Growth Blueprint
+              </TrackedLink>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Retailers
+              </p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+                Structured operations. Predictable growth.
+              </h3>
+              <p className="mt-4 text-sm text-slate-600">
+                We eliminate revenue leakage and operational inefficiencies in
+                retail businesses by:
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                <li>• Automating customer follow-ups and promotional campaigns</li>
+                <li>• Streamlining billing and inventory workflows</li>
+                <li>• Recovering missed calls and lost enquiries</li>
+                <li>• Improving customer communication systems</li>
+                <li>• Enhancing sales visibility and reporting clarity</li>
+              </ul>
+              <TrackedLink
+                href="/solutions/retailers"
+                label="Request Retail System Assessment"
+                location="home-industries"
+                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+              >
+                Request Retail System Assessment
+              </TrackedLink>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section-pad border-t border-slate-200 bg-slate-50">
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            See a Working Demo
-          </h2>
-          <p className="mt-4 text-base text-slate-600">
-            We tailor systems for diagnostic centers, clinics, supermarkets, and
-            schools.
-          </p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {[
-              "Appointment dashboard",
-              "Billing screen",
-              "Daily report",
-            ].map((label) => (
-              <div
-                key={label}
-                className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
-                <div className="flex h-36 items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-slate-50 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                  {label}
-                </div>
-                <p className="mt-4 text-sm text-slate-600">
-                  Interactive demo card preview.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-pad">
+      <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+          <h2 className="text-3xl font-semibold tracking-tight">
             How Vivv Works
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {[
-              "Diagnose – Understand workflows, bottlenecks, and goals",
-              "Design – Build a system blueprint aligned to outcomes",
-              "Implement – Deploy automation, data, and workflows",
-              "Optimize – Improve based on operational data",
-              "Support – Long-term partnership and upgrades",
+              "Diagnose – Deep analysis of your current operations",
+              "Design – Customized system blueprint aligned to your goals",
+              "Implement – Deployment of automation & structured workflows",
+              "Optimize – Continuous improvement based on performance data",
+              "Scale – Long-term support for sustainable growth",
             ].map((step) => (
               <div
                 key={step}
-                className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm text-slate-700"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm"
               >
                 {step}
               </div>
@@ -239,69 +218,48 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad border-t border-slate-200 bg-slate-50">
+      <section className="section-pad">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-            Simple Pricing
+            Why Vivv
           </h2>
-          <p className="mt-4 text-base text-slate-600">
-            Exact price depends on modules. We start with MVP and scale.
-          </p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
             {[
-              {
-                title: "Starter",
-                body: "Single location teams ready to systemize operations.",
-              },
-              {
-                title: "Growth",
-                body: "Multi-team operations with automation + reporting.",
-              },
-              {
-                title: "Enterprise",
-                body: "Multi-branch visibility and advanced workflows.",
-              },
-            ].map((tier) => (
-              <div
-                key={tier.title}
-                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              "Business-first approach (not just technology)",
+              "Industry-specific solutions",
+              "Simple, scalable systems",
+              "Measurable outcomes",
+              "Long-term partnership model",
+              "No unnecessary tools or complexity",
+            ].map((bullet) => (
+              <li
+                key={bullet}
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-3"
               >
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {tier.title}
-                </h3>
-                <p className="mt-3 text-sm text-slate-600">{tier.body}</p>
-              </div>
+                {bullet}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
+      <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Ready to Run Your Business Like a System?
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+            Ready to Build a Business That Runs Smoothly?
           </h2>
-          <p className="mt-4 text-base text-slate-300">
-            Based in Bengaluru • Fast support • Long-term partner
+          <p className="mt-4 text-base text-slate-600">
+            Let’s design systems that give you clarity, control, and peace of
+            mind.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <TrackedLink
-              href="/contact"
-              label="Book a Free Demo"
-              location="home-final-cta"
-              className="inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
-            >
-              Book a Free Demo
-            </TrackedLink>
-            <TrackedLink
-              href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
-              label="WhatsApp Us"
-              location="home-final-cta"
-              className="inline-flex rounded-full border border-emerald-300 px-6 py-3 text-sm font-semibold text-emerald-200 transition hover:border-emerald-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-            >
-              WhatsApp Us
-            </TrackedLink>
-          </div>
+          <TrackedLink
+            href="/contact"
+            label="Schedule Your Free Consultation"
+            location="home-final-cta"
+            className="mt-8 inline-flex rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+          >
+            Schedule Your Free Consultation
+          </TrackedLink>
         </div>
       </section>
     </div>

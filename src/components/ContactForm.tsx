@@ -12,10 +12,9 @@ const encode = (data: Record<string, string>) =>
     .join("&");
 
 const industries = [
-  "Diagnostic Centers",
-  "Clinics",
+  "Diagnostic Labs",
   "Supermarkets",
-  "Schools",
+  "Retailers",
   "Other",
 ] as const;
 
@@ -148,7 +147,7 @@ export default function ContactForm() {
       >
         {status === "submitting"
           ? "Submitting..."
-          : "Request Free Demo"}
+          : "Request Free Consultation"}
       </button>
     </form>
   );

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "Learn about Vivv Technologies and our mission.",
+  title: "About Us",
+  description: "Learn about Vivv Systems and our mission.",
   openGraph: {
-    title: "About Vivv Technologies",
-    description: "Learn about Vivv Technologies and our mission.",
+    title: "About Vivv Systems",
+    description: "Learn about Vivv Systems and our mission.",
   },
 };
 
@@ -14,23 +14,25 @@ export default function AboutPage() {
     <div className="section-pad">
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-          About
+          About Us
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
-          About Vivv Technologies
+          About Vivv Systems
         </h1>
         <div className="prose-lite mt-6 text-base text-slate-600">
           <p>
-            Vivv Technologies was founded to bring structure, clarity, and
-            sustainable growth to operationally intensive businesses.
+            Vivv Systems was founded with a clear mission — to bring structure,
+            clarity, and sustainable growth to operationally intensive
+            businesses.
           </p>
           <p>
-            We build custom software, automation, and project delivery systems
-            that remove manual work and create reliable outcomes.
+            We believe growth should not depend on chaos, overworked staff, or
+            missed opportunities. It should be driven by systems that work
+            seamlessly in the background.
           </p>
           <p>
             Our expertise lies in identifying operational gaps between revenue,
-            customer experience, and internal workflows—and implementing
+            customer experience, and internal workflows — and implementing
             solutions that eliminate inefficiencies while increasing
             profitability.
           </p>
@@ -39,18 +41,15 @@ export default function AboutPage() {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-lg font-semibold text-slate-900">
-              Our Vision
-            </h2>
+            <h2 className="text-lg font-semibold text-slate-900">Our Vision</h2>
             <p className="mt-3 text-sm text-slate-600">
-              To become a trusted growth and automation partner for operational
-              businesses across healthcare, retail, and education sectors.
+              To become the most trusted growth and automation partner for
+              healthcare and retail businesses, enabling them to operate with
+              clarity, efficiency, and predictable growth.
             </p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h2 className="text-lg font-semibold text-slate-900">
-              Our Promise
-            </h2>
+            <h2 className="text-lg font-semibold text-slate-900">Our Promise</h2>
             <p className="mt-3 text-sm text-slate-600">
               Clarity. Control. Peace of Mind.
             </p>

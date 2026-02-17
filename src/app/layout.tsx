@@ -2,26 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Inter } from "next/font/google";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 const metadataBase =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vivvsystems.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   title: {
-    default:
-      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
-    template: "%s | Vivv Technologies",
+    default: "Vivv Systems | Smart Systems. Sustainable Growth.",
+    template: "%s | Vivv Systems",
   },
   description:
-    "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
+    "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
   openGraph: {
     type: "website",
-    title:
-      "Custom Software & Project Management for Operational Businesses | Vivv Technologies",
+    title: "Vivv Systems | Smart Systems. Sustainable Growth.",
     description:
-      "Vivv Technologies delivers custom software, automation, and project management for operational businesses. Build systems that improve revenue, visibility, and control.",
-    siteName: "Vivv Technologies",
+      "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+    siteName: "Vivv Systems",
   },
   icons: {
     icon: "/icon.png",
@@ -58,9 +61,9 @@ export default function RootLayout({
         </main>
         <Footer />
         <a
-          href="https://wa.me/918095045559?text=Hi%20Vivv%20Technologies,%20I%20want%20to%20learn%20about%20custom%20software%20and%20automation."
+          href="https://wa.me/918095045559?text=Hi%20Vivv%20Systems,%20I%20want%20a%20free%20consultation."
           className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
-          aria-label="WhatsApp Vivv Technologies"
+          aria-label="WhatsApp Vivv Systems"
           target="_blank"
           rel="noreferrer"
         >
@@ -72,7 +75,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Vivv Technologies",
+              name: "Vivv Systems",
               url: metadataBase,
               telephone: "+91-8095045559",
               address: {
@@ -91,10 +94,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Custom Software & Project Management",
+              name: "Business Systems & Automation",
               provider: {
                 "@type": "LocalBusiness",
-                name: "Vivv Technologies",
+                name: "Vivv Systems",
                 address: {
                   "@type": "PostalAddress",
                   addressLocality: "Bengaluru",
@@ -102,7 +105,7 @@ export default function RootLayout({
                 },
               },
               areaServed: "IN",
-              serviceType: "Custom software, automation, and project management",
+              serviceType: "Operational business systems and automation",
             }),
           }}
         />
