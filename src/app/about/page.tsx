@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900">Our Promise</h2>
             <p className="mt-3 text-sm text-slate-600">
-              Clarity. Control. Peace of Mind.
+              Clarity. Control. Sustainable Growth.
             </p>
           </div>
         </div>
