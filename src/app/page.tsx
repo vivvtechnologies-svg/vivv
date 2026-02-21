@@ -3,13 +3,15 @@ import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title:
+    "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India",
   description:
-    "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+    "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
   openGraph: {
-    title: "Vivv Systems | Smart Systems. Sustainable Growth.",
+    title:
+      "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India",
     description:
-      "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+      "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
   },
 };
 

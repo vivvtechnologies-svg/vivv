@@ -10,21 +10,50 @@ const inter = Inter({
 });
 const metadataBase =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://vivvsystems.in";
+const siteTitle =
+  "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India";
+const siteDescription =
+  "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   title: {
-    default: "Vivv Systems | Smart Systems. Sustainable Growth.",
+    default: siteTitle,
     template: "%s | Vivv Systems",
   },
-  description:
-    "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+  description: siteDescription,
+  keywords: [
+    "business automation india",
+    "diagnostic lab automation",
+    "supermarket automation",
+    "retail systems",
+    "whatsapp automation",
+    "operational dashboards",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
-    title: "Vivv Systems | Smart Systems. Sustainable Growth.",
-    description:
-      "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+    locale: "en_IN",
+    url: metadataBase,
+    title: siteTitle,
+    description: siteDescription,
     siteName: "Vivv Systems",
+    images: [
+      {
+        url: "/header.jpeg",
+        width: 915,
+        height: 282,
+        alt: "Vivv Systems",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/header.jpeg"],
   },
   icons: {
     icon: "/icon.png",
@@ -74,20 +103,36 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Vivv Systems",
-              url: metadataBase,
-              telephone: "+91-8095045559",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Bengaluru",
-                addressCountry: "IN",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Vivv Systems",
+                url: metadataBase,
+                logo: `${metadataBase}/icon.png`,
+                sameAs: [metadataBase],
               },
-              areaServed: "IN",
-              sameAs: ["https://vivvtechnologies.in"],
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Vivv Systems",
+                url: metadataBase,
+                inLanguage: "en-IN",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                name: "Vivv Systems",
+                url: metadataBase,
+                telephone: "+91-8095045559",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Bengaluru",
+                  addressCountry: "IN",
+                },
+                areaServed: "IN",
+              },
+            ]),
           }}
         />
         <script
@@ -108,6 +153,11 @@ export default function RootLayout({
               },
               areaServed: "IN",
               serviceType: "Operational business systems and automation",
+              knowsAbout: [
+                "Diagnostic Lab Automation",
+                "Supermarket Automation",
+                "Retail Operations Systems",
+              ],
             }),
           }}
         />
