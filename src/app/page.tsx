@@ -93,99 +93,82 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="flex items-center justify-between gap-6">
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
-              Industries We Specialize In
+              Solutions by Industry
             </h2>
           </div>
+          <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+            Built for operational teams that need clarity, faster execution, and
+            measurable outcomes.
+          </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Diagnostic Labs
               </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+              <h3 className="mt-3 text-lg font-semibold text-slate-900">
                 Recover lost leads. Increase walk-ins. Gain full control.
               </h3>
-              <p className="mt-4 text-sm text-slate-600">
-                We implement intelligent automation systems that:
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                <li>• Recover missed, busy, and unanswered calls</li>
-                <li>• Enable 24/7 self-service appointment booking</li>
-                <li>• Reduce receptionist and admin workload by up to 70%</li>
-                <li>• Increase walk-ins by 10–15% through structured follow-ups</li>
-                <li>• Automate reminders and repeat test notifications</li>
-                <li>• Send offers and coupons for retention</li>
-                <li>• Track revenue, expenses, and repeat customers</li>
-                <li>• Provide owners full operational visibility and control</li>
+              <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                <li>Call recovery + smart appointment booking</li>
+                <li>Automated reminders and repeat-test follow-ups</li>
+                <li>Revenue and operations visibility dashboard</li>
               </ul>
+              <div className="mt-5 rounded-xl bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-700">
+                10-15% walk-in lift potential
+              </div>
               <TrackedLink
                 href="/solutions/diagnostic-labs"
                 label="Book Lab Growth Audit"
                 location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+                className="mt-6 inline-flex text-sm font-semibold text-emerald-700 transition hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
                 Book Lab Growth Audit
               </TrackedLink>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Supermarkets
               </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+              <h3 className="mt-3 text-lg font-semibold text-slate-900">
                 Transform offline stores into structured revenue engines.
               </h3>
-              <p className="mt-4 text-sm text-slate-600">
-                We focus on small to medium-sized supermarkets that operate
-                manually and are fully offline.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                <li>• Analysing business operations and identifying revenue gaps</li>
-                <li>• Designing structured sales systems to increase profitability</li>
-                <li>
-                  • Launching dedicated online ordering platforms serving
-                  customers within 0–3 km
-                </li>
-                <li>• Providing full control to manage products, pricing, and offers</li>
-                <li>• Supporting both offline and online sales simultaneously</li>
-                <li>
-                  • Partnering with expert digital marketing teams for affordable
-                  promotion
-                </li>
-                <li>
-                  • Implementing end-to-end business systems for long-term growth
-                </li>
+              <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                <li>Business gap analysis and margin-focused planning</li>
+                <li>Online ordering setup for 0-3 km local delivery</li>
+                <li>Unified control for products, offers, and pricing</li>
               </ul>
+              <div className="mt-5 rounded-xl bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-700">
+                Offline + online execution model
+              </div>
               <TrackedLink
                 href="/solutions/supermarkets"
                 label="Get Supermarket Growth Blueprint"
                 location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+                className="mt-6 inline-flex text-sm font-semibold text-emerald-700 transition hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
                 Get Supermarket Growth Blueprint
               </TrackedLink>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
                 Retailers
               </p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">
+              <h3 className="mt-3 text-lg font-semibold text-slate-900">
                 Structured operations. Predictable growth.
               </h3>
-              <p className="mt-4 text-sm text-slate-600">
-                We eliminate revenue leakage and operational inefficiencies in
-                retail businesses by:
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                <li>• Automating customer follow-ups and promotional campaigns</li>
-                <li>• Streamlining billing and inventory workflows</li>
-                <li>• Recovering missed calls and lost enquiries</li>
-                <li>• Improving customer communication systems</li>
-                <li>• Enhancing sales visibility and reporting clarity</li>
+              <ul className="mt-5 space-y-2 text-sm text-slate-600">
+                <li>Promotion and follow-up automation</li>
+                <li>Billing and inventory workflow optimization</li>
+                <li>Sales visibility with clear reporting</li>
               </ul>
+              <div className="mt-5 rounded-xl bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-700">
+                Reduced leakage, clearer operations
+              </div>
               <TrackedLink
                 href="/solutions/retailers"
                 label="Request Retail System Assessment"
                 location="home-industries"
-                className="mt-6 inline-flex text-sm font-semibold text-slate-900 transition hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 focus-visible:ring-offset-2"
+                className="mt-6 inline-flex text-sm font-semibold text-emerald-700 transition hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
                 Request Retail System Assessment
               </TrackedLink>

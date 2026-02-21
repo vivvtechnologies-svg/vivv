@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-slate-900 antialiased">
+      <body className={`${inter.variable} min-h-screen bg-white text-slate-900 antialiased`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-slate-900 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
@@ -53,16 +53,18 @@ export default function RootLayout({
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-10"
           >
-            <div className="absolute -top-40 right-[-10%] h-72 w-72 rounded-full bg-slate-100/80 blur-3xl" />
-            <div className="absolute top-32 left-[-12%] h-64 w-64 rounded-full bg-slate-200/60 blur-3xl" />
-            <div className="absolute bottom-20 right-[15%] h-56 w-56 rounded-full bg-slate-100/80 blur-3xl" />
+            <div className="geek-grid" />
+            <div className="geek-beam" />
+            <div className="float-slow absolute -top-40 right-[-10%] h-72 w-72 rounded-full bg-slate-100/80 blur-3xl" />
+            <div className="float-slow absolute top-32 left-[-12%] h-64 w-64 rounded-full bg-slate-200/60 blur-3xl" />
+            <div className="float-slow absolute bottom-20 right-[15%] h-56 w-56 rounded-full bg-slate-100/80 blur-3xl" />
           </div>
           {children}
         </main>
         <Footer />
         <a
           href="https://wa.me/918095045559?text=Hi%20Vivv%20Systems,%20I%20want%20a%20free%20consultation."
-          className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+          className="pulse-soft fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
           aria-label="WhatsApp Vivv Systems"
           target="_blank"
           rel="noreferrer"
