@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Request a free consultation with Vivv Systems.",
+  title: "Book a Free Consultation",
+  description:
+    "Talk to Vivv Systems about your business. Get a free consultation tailored to your diagnostic lab, supermarket, or retail operations.",
   openGraph: {
-    title: "Contact Vivv Systems",
-    description: "Request a free consultation with Vivv Systems.",
+    title: "Book a Free Consultation",
+    description:
+      "Talk to Vivv Systems about your business. Get a free consultation tailored to your diagnostic lab, supermarket, or retail operations.",
   },
 };
 

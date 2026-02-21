@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Retailers",
-  description: "Smart Retail Growth System™ by Vivv Systems.",
+  title: "Retail Operations & Growth Automation",
+  description:
+    "Automate promotions, streamline billing and inventory, and get clear sales visibility with Vivv Systems for retailers.",
   openGraph: {
-    title: "Smart Retail Growth System™",
-    description: "Smart Retail Growth System™ by Vivv Systems.",
+    title: "Retail Operations & Growth Automation",
+    description:
+      "Automate promotions, streamline billing and inventory, and get clear sales visibility with Vivv Systems for retailers.",
   },
 };
 

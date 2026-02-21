@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Diagnostic Labs",
-  description: "Lab Growth Automation System™ by Vivv Systems.",
+  title: "Diagnostic Lab Automation & Lead Recovery",
+  description:
+    "Recover missed calls, automate appointment reminders, and get full revenue visibility for your diagnostic lab. Book a free audit with Vivv Systems.",
   openGraph: {
-    title: "Lab Growth Automation System™",
-    description: "Lab Growth Automation System™ by Vivv Systems.",
+    title: "Diagnostic Lab Automation & Lead Recovery",
+    description:
+      "Recover missed calls, automate appointment reminders, and get full revenue visibility for your diagnostic lab. Book a free audit with Vivv Systems.",
   },
 };
 

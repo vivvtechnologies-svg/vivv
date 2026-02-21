@@ -8,44 +8,46 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
-const metadataBase =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vivvsystems.in";
-const siteTitle =
-  "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India";
+const siteUrl = "https://vivvsystems.in";
+const siteTitle = "Vivv Systems | Smart Systems. Sustainable Growth.";
 const siteDescription =
-  "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.";
+  "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue and build predictable growth through structured systems and intelligent automation.";
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Vivv Systems",
+  url: siteUrl,
+  email: "info@vivvsystems.in",
+  telephone: "+918095045559",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bengaluru",
+    addressCountry: "IN",
+  },
+  description:
+    "Structured systems and intelligent automation for diagnostic labs, supermarkets, and retailers in Bengaluru, India.",
+};
 
 export const metadata: Metadata = {
-  metadataBase: new URL(metadataBase),
+  metadataBase: new URL(siteUrl),
   title: {
     default: siteTitle,
     template: "%s | Vivv Systems",
   },
   description: siteDescription,
-  keywords: [
-    "business automation india",
-    "diagnostic lab automation",
-    "supermarket automation",
-    "retail systems",
-    "whatsapp automation",
-    "operational dashboards",
-  ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: metadataBase,
+    url: siteUrl,
     title: siteTitle,
     description: siteDescription,
     siteName: "Vivv Systems",
     images: [
       {
-        url: "/header.jpeg",
-        width: 915,
-        height: 282,
-        alt: "Vivv Systems",
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vivv Systems - Smart Systems. Sustainable Growth.",
       },
     ],
   },
@@ -53,7 +55,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/header.jpeg"],
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: {
     icon: "/icon.png",
@@ -69,6 +75,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className={`${inter.variable} min-h-screen bg-white text-slate-900 antialiased`}>
         <a
           href="#main-content"
@@ -100,67 +112,6 @@ export default function RootLayout({
         >
           WhatsApp Us
         </a>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: "Vivv Systems",
-                url: metadataBase,
-                logo: `${metadataBase}/icon.png`,
-                sameAs: [metadataBase],
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                name: "Vivv Systems",
-                url: metadataBase,
-                inLanguage: "en-IN",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                name: "Vivv Systems",
-                url: metadataBase,
-                telephone: "+91-8095045559",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Bengaluru",
-                  addressCountry: "IN",
-                },
-                areaServed: "IN",
-              },
-            ]),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: "Business Systems & Automation",
-              provider: {
-                "@type": "LocalBusiness",
-                name: "Vivv Systems",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Bengaluru",
-                  addressCountry: "IN",
-                },
-              },
-              areaServed: "IN",
-              serviceType: "Operational business systems and automation",
-              knowsAbout: [
-                "Diagnostic Lab Automation",
-                "Supermarket Automation",
-                "Retail Operations Systems",
-              ],
-            }),
-          }}
-        />
       </body>
     </html>
   );

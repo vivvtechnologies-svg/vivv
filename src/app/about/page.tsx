@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Vivv Systems and our mission.",
+  description:
+    "Learn about Vivv Systems — a Bengaluru-based business automation company helping labs, supermarkets, and retailers grow.",
   openGraph: {
     title: "About Vivv Systems",
-    description: "Learn about Vivv Systems and our mission.",
+    description:
+      "Learn about Vivv Systems — a Bengaluru-based business automation company helping labs, supermarkets, and retailers grow.",
   },
 };
 

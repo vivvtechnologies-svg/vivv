@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Solutions",
+  title: "Our Solutions",
   description:
-    "Industry-specific solutions for diagnostic labs, supermarkets, and retailers.",
+    "Industry-specific automation systems for diagnostic labs, supermarkets, and retailers. See how Vivv Systems delivers measurable growth.",
   openGraph: {
-    title: "Solutions | Vivv Systems",
+    title: "Our Solutions",
     description:
-      "Industry-specific solutions for diagnostic labs, supermarkets, and retailers.",
+      "Industry-specific automation systems for diagnostic labs, supermarkets, and retailers. See how Vivv Systems delivers measurable growth.",
   },
 };
 

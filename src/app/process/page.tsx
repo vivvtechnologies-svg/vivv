@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Process",
-  description: "Our structured implementation model for sustainable results.",
+  description:
+    "How Vivv Systems diagnoses, designs, implements, and scales business systems for operational businesses.",
   openGraph: {
     title: "Our Process | Vivv Systems",
-    description: "Our structured implementation model for sustainable results.",
+    description:
+      "How Vivv Systems diagnoses, designs, implements, and scales business systems for operational businesses.",
   },
 };
 

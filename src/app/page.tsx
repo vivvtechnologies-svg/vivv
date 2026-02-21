@@ -3,15 +3,13 @@ import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title:
-    "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India",
+  title: "Smart Systems. Sustainable Growth.",
   description:
-    "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+    "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue and build predictable growth through structured systems and intelligent automation.",
   openGraph: {
-    title:
-      "Vivv Systems | Business Automation for Diagnostic Labs, Supermarkets & Retailers in India",
+    title: "Smart Systems. Sustainable Growth.",
     description:
-      "Vivv Systems helps diagnostic labs, supermarkets, and retailers in India increase revenue, reduce operational inefficiencies, and build predictable growth through structured systems and intelligent automation.",
+      "Vivv Systems helps diagnostic labs, supermarkets, and retailers increase revenue and build predictable growth through structured systems and intelligent automation.",
   },
 };
 
@@ -59,9 +57,10 @@ export default function HomePage() {
               <div className="w-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <Image
                   src="/brand-v2.jpeg"
-                  alt="Vivv Systems brand"
+                  alt="Vivv Systems business automation dashboard"
                   width={1536}
                   height={1024}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="h-64 w-full object-contain sm:h-80"
                   priority
                 />

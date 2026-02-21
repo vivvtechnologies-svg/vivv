@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import TrackedLink from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
-  title: "Supermarkets",
-  description: "Retail Revenue Acceleration System™ by Vivv Systems.",
+  title: "Supermarket Revenue & Operations System",
+  description:
+    "Transform your offline store into a structured revenue engine with local delivery, margin planning, and unified pricing control.",
   openGraph: {
-    title: "Retail Revenue Acceleration System™",
-    description: "Retail Revenue Acceleration System™ by Vivv Systems.",
+    title: "Supermarket Revenue & Operations System",
+    description:
+      "Transform your offline store into a structured revenue engine with local delivery, margin planning, and unified pricing control.",
   },
 };
 
