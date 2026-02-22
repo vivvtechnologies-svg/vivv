@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GearIcon, SparkIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Our Process",
@@ -27,7 +28,8 @@ export default function ProcessPage() {
           <div className="pointer-events-none absolute -left-20 top-20 h-48 w-48 rounded-full bg-emerald-100/60 blur-3xl" />
           <div className="pointer-events-none absolute -right-16 bottom-12 h-44 w-44 rounded-full bg-slate-200/70 blur-3xl" />
 
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-500">
+          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-slate-500">
+            <GearIcon className="h-4 w-4 text-emerald-600" />
             Our Process
           </p>
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">

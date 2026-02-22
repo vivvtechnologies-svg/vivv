@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { MailIcon, MapPinIcon, PhoneIcon, SparkIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Book a Free Consultation",
@@ -16,7 +17,8 @@ export default function ContactPage() {
   return (
     <div className="section-pad">
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+        <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+          <SparkIcon className="h-4 w-4 text-emerald-600" />
           Contact
         </p>
         <div className="mt-4 grid gap-10 lg:grid-cols-[1fr_1.1fr]">
@@ -29,9 +31,18 @@ export default function ContactPage() {
               help you streamline operations and increase revenue.
             </p>
             <div className="mt-8 space-y-3 text-sm text-slate-700">
-              <p>📍 Location: Bengaluru</p>
-              <p>📧 Email: info@vivvsystems.in</p>
-              <p>📞 Phone: 8095045559</p>
+              <p className="inline-flex items-center gap-2">
+                <MapPinIcon className="h-4 w-4 text-emerald-600" />
+                Location: Bengaluru
+              </p>
+              <p className="inline-flex items-center gap-2">
+                <MailIcon className="h-4 w-4 text-emerald-600" />
+                Email: info@vivvsystems.in
+              </p>
+              <p className="inline-flex items-center gap-2">
+                <PhoneIcon className="h-4 w-4 text-emerald-600" />
+                Phone: 8095045559
+              </p>
             </div>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">

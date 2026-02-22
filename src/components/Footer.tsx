@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MailIcon, MapPinIcon, PhoneIcon, SparkIcon } from "@/components/Icons";
 const navigation = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
@@ -21,7 +22,8 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <SparkIcon className="h-4 w-4 text-emerald-600" />
             Quick Links
           </p>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
@@ -46,13 +48,23 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+          <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <SparkIcon className="h-4 w-4 text-emerald-600" />
             Contact
           </p>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            <li>Location: Bengaluru</li>
-            <li>Email: info@vivvsystems.in</li>
-            <li>Phone: 8095045559</li>
+            <li className="inline-flex items-center gap-2">
+              <MapPinIcon className="h-4 w-4 text-emerald-600" />
+              Location: Bengaluru
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <MailIcon className="h-4 w-4 text-emerald-600" />
+              Email: info@vivvsystems.in
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <PhoneIcon className="h-4 w-4 text-emerald-600" />
+              Phone: 8095045559
+            </li>
           </ul>
         </div>
       </div>

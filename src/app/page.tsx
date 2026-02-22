@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import TrackedLink from "@/components/TrackedLink";
+import {
+  ArrowRightIcon,
+  CartIcon,
+  FlaskIcon,
+  GearIcon,
+  SparkIcon,
+  StoreIcon,
+} from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Smart Systems. Sustainable Growth.",
@@ -19,7 +27,8 @@ export default function HomePage() {
       <section className="section-pad">
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+            <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              <SparkIcon className="h-4 w-4 text-emerald-600" />
               Vivv Systems
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
@@ -44,9 +53,10 @@ export default function HomePage() {
                 href="/solutions"
                 label="Explore Our Solutions"
                 location="home-hero"
-                className="rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
+                className="inline-flex items-center gap-2 rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70 focus-visible:ring-offset-2"
               >
                 Explore Our Solutions
+                <ArrowRightIcon className="h-4 w-4" />
               </TrackedLink>
             </div>
           </div>
@@ -72,7 +82,8 @@ export default function HomePage() {
 
       <section className="section-pad border-t border-slate-200 bg-slate-50">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-semibold tracking-tight text-slate-900">
+            <GearIcon className="h-7 w-7 text-emerald-600" />
             Growing Shouldn’t Feel This Complicated.
           </h2>
           <div className="prose-lite mt-6 text-base text-slate-600">
@@ -93,7 +104,8 @@ export default function HomePage() {
       <section className="section-pad">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="flex items-center justify-between gap-6">
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+            <h2 className="inline-flex items-center gap-2 text-3xl font-semibold tracking-tight text-slate-900">
+              <SparkIcon className="h-7 w-7 text-emerald-600" />
               Solutions by Industry
             </h2>
           </div>
@@ -103,7 +115,8 @@ export default function HomePage() {
           </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+              <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                <FlaskIcon className="h-4 w-4 text-emerald-600" />
                 Diagnostic Labs
               </p>
               <h3 className="mt-3 text-lg font-semibold text-slate-900">
@@ -127,7 +140,8 @@ export default function HomePage() {
               </TrackedLink>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+              <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                <CartIcon className="h-4 w-4 text-emerald-600" />
                 Supermarkets
               </p>
               <h3 className="mt-3 text-lg font-semibold text-slate-900">
@@ -151,7 +165,8 @@ export default function HomePage() {
               </TrackedLink>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+              <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                <StoreIcon className="h-4 w-4 text-emerald-600" />
                 Retailers
               </p>
               <h3 className="mt-3 text-lg font-semibold text-slate-900">
@@ -180,7 +195,8 @@ export default function HomePage() {
 
       <section className="section-pad border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-semibold tracking-tight">
+            <GearIcon className="h-7 w-7 text-emerald-300" />
             How Vivv Works
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -204,7 +220,8 @@ export default function HomePage() {
 
       <section className="section-pad">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-semibold tracking-tight text-slate-900">
+            <SparkIcon className="h-7 w-7 text-emerald-600" />
             Why Vivv
           </h2>
           <ul className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
